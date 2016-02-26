@@ -1,66 +1,101 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Allison Paul</title>
-</head>
+  <head>
+    <link href='https://fonts.googleapis.com/css?family=Neuton:400,700' rel='stylesheet' type='text/css'>
 
-<body>
-  <header>
-  <h1>Allison Paul</h1>
-  <h2>Developer</h2>
+    <link href='https://fonts.googleapis.com/css?family=Work+Sans:500' rel='stylesheet' type='text/css'>
 
-    <nav> <!--Nav bar will be static on top right -->
+    <title>Allison Paul | Developer</title>
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/default.css">
+  </head>
+
+  <body>
+    <nav class="fixed-nav-bar">
       <ul>
-        <li><a href= "#about">About</a></li>
-        <li><a href= "#projects">Projects</a></li>
-        <li><a href= "#contact">Contact</a></li>
-        <li><a href="blog/index.html">Blog</a></li>
+        <li>
+          <a href= "#about">ABOUT</a>
+        </li>
+        <li>
+          <a href= "#projects">PROJECTS</a>
+        </li>
+        <li>
+          <a href= "#contact">CONTACT</a>
+        </li>
+        <li>
+          <a href="blog/index.html">BLOG </a>
+        </li>
       </ul>
     </nav>
 
-<!-- Images below will be in a row -->
-  <li> <img src="#" alt="me 1"></li>
-  <li> <img src="#" alt="me 2"></li>
-  <li> <img src="#" alt="me 3"></li>
-  </header>
+      <header id="header">
+        <ul>
+          <li>
+            <img src="img/me2.jpeg" alt="me 1"/>
+          </li>
+          <li>
+            <img src="img/me3.jpeg" alt="me 2"/>
+          </li>
+          <li>
+            <img src="img/me4.jpeg" alt="me 3"/>
+          </li>
+        </ul>
+      </header>
 
-<div id ="about">
-    <p>Hi, I'm Allison.</p>
-    <p>I  am currently a student at Dev Bootcamp, trying to get my feet wet in all that is web development.</p>
-  <p>My heart beats for traveling, movies, <a href ="http://birdiethebulldog.com">my dog</a>, trying new things, plants, farmers markets, and green tea lattes.</p>
-  </div>
+      <div id ="about">
+        <h1>Hi, I'm Allison.</h1>
+          <p>
+            <b>Nice to meet you.</b>
+          </p>
+          <p>
+            I  am currently a student at Dev Bootcamp, trying to get my feet wet in all that is web development. <br>
+            My heart beats for traveling, movies, <a href ="http://birdiethebulldog.com">my dog</a>, polaroid cameras (can you tell?), trying new things, plants, farmers markets, and green tea lattes.
+          </p>
+      </div>
 
-<div id="projects">
-<h1>Projects</h1>
-<!-- This area will have thumbnails of my projects that will link to a full size -number of images will depend on number of projects. This is the section that could need to be rethought completely as I am not sure how the projects will look, what I will have to show to an audience with a thumbnail.-->
+      <div id="projects">
+        <h1>Projects</h1>
+          <ul id="gallery">
+            <li>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Classic_alphabet_numbers_1_at_coloring-pages-for-kids-boys-dotcom.svg/816px-Classic_alphabet_numbers_1_at_coloring-pages-for-kids-boys-dotcom.svg.png" alt="work 1" width="50" height= "50">
+            </li>
+            <li>
+              <img src="http://www.clipartbest.com/cliparts/MiL/d6R/MiLd6R4ia.svg" alt="work 2" width="50" height= "50">
+            </li>
+            <li>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Classic_alphabet_numbers_3_at_coloring-pages-for-kids-boys-dotcom.svg/220px-Classic_alphabet_numbers_3_at_coloring-pages-for-kids-boys-dotcom.svg.png" alt="work 3" width="50" height= "50">
+            </li>
+            <li>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Classic_alphabet_numbers_4_at_coloring-pages-for-kids-boys-dotcom.svg" alt="work 4" width="50" height= "50">
+            </li>
+          </ul>
+      </div>
 
-<ul>
-  <li> <img src="#" alt="work 1"></li>
-  <li> <img src="#" alt="work 2"></li>
-  <li> <img src="#" alt="work 3"></li>
-  <li> <img src="#" alt="work 4"></li>
-</ul>
+      <div id="contact">
+        <h1>Contact</h1>
+          <a href=
+            'mailto:allison.paul221@gmail.com'><img src="img/email.png" alt="email" width="70" height= "70">
+          </a>
+          <a href=
+            "https://www.instagram.com/allisonpaul"><img src="img/instagram.png" alt="insta" width="70" height= "70">
+          </a>
+          <a href=
+            "https://facebook.com/allisoncpaul"><img src="img/facebook.png" alt="facebook" width="70" height= "70">
+          </a>
+          <a href=
+           "https://github.com/allisonpaul"><img src="img/github.png"  alt="github" width="70" height= "70">
+         </a>
+         <a href=
+            "https://www.linkedin.com/in/allisonpaul"><img src="img/linkedin.png" alt="linkedin" width="70" height= "70">
+         </a>
+         <br>
+      </div>
 
-</div>
-
-
-  <div id="contact">
-    <h1>Contact</h1>
-        <p>Phone: 270.991.9225</p>
-        <p>Email: <a href='mailto:allison.paul221@gmail.com'>allison.paul221@gmail.com</a>
-    <br>
-
-</div>
-
-<footer>
-
-  <a href="https://www.instagram.com/allisonpaul"><img src="img/instagram.png" alt="insta" width="50" height= "50"></a>
-  <a href="https://facebook.com/allisoncpaul"><img src="img/facebook.png" alt="facebook" width="50" height= "50"></a>
-  <a href="https://github.com/allisonpaul"><img src="img/github.png"  alt="github" width="50" height= "50"></a>
-  <a href="https://www.linkedin.com/in/allisonpaul"><img src="img/linkedin.png" alt="linkedin" width="50" height= "50"></a>
-
-  <p>&copy;2016 Allison Paul. </p>
-</footer>
-</body>
+      <footer>
+        <p>
+          &copy;2016 Allison Paul.
+        </p>
+      </footer>
+  </body>
 </html>
 
