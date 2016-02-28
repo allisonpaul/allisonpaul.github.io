@@ -1,0 +1,135 @@
+ <!doctype html>
+<html>
+    <head>
+        <!-- FONTS -->
+    <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Londrina+Sketch' rel='stylesheet' type='text/css'>
+     <link href='https://fonts.googleapis.com/css?family=PT+Mono' rel='stylesheet' type='text/css'>
+
+    <title>Allison Paul </title>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog-template.css">
+  </head>
+
+  <body>
+      <header>
+          <h1>A <span>Girl Code</span>s</h1>
+          <nav>
+            <ul>
+              <li>
+                <a href="../index.html">H O M E</a>
+              </li>
+              <li>
+                <a href="blog-index.html">B A C K</a>
+              </li>
+            </ul>
+          </nav>
+    </header>
+
+    <section class="posts">
+      <h1>  Let's Lay This Out.</h1>
+        <h2>Positioning in CSS</h2>
+          <h6>February 27, 2016</h6>
+    </section>
+
+    <section id="post">
+      <section>
+      <h3>Elements and The Box Model
+      </h3>
+        <p>Let's start with the basics. An element is an individual component of a web page, the basic building block of HTML. Most elements are written with a start tag and an end tag with content inbetween. They can be nested within each other to describe the structure of the page.
+        </p>
+        <p>
+        Elements populate the page in what's known as the CSS box model. Each element is like a box that consists of different layers.
+        </p>
+
+        <img src=
+        "https://www.washington.edu/accesscomputing/webd2/student/unit3/images/boxmodel.gif" alt="boxmodel"
+        />
+
+        <p>
+        When we position an element we are moving the entire box, not just the content.
+        </p>
+
+        <p>I would also like to note that it is common to group elements together in a containing element, such as < div >. This allows you to format them easier by using less CSS code.
+        </p>
+     </section>
+      <section>
+        <h3>The Position of Elements</h3>
+          <p>
+            The position property has four common values: static, relative, absolute, or fixed. These allow you to edit the layout of your page.
+        </p>
+
+        <h4>Static Positioning</h4>
+          <p>
+          Static positioning is the normal flow of the web page. If you don't apply another position value to your element, it will default to static. Statically positioned elements will stack on top of one another. You do not need to define the position as static, however you could with the following code;
+
+            <pre>
+             box {
+              position:static;
+             }
+            </pre>
+
+          This layout is helpful for a simple, single column pages where everything stacks on top of each other.
+        </p>
+
+      <h4>Relative Positioning</h4>
+        <p>
+          Relative positioning stacks items nicely as well but gives you some freedom to move the elements around. This scheme moves an element in relation to where it would have been in the static flow. You can move it using the offset properties: left, right, top, or bottom.
+            <pre>
+              box {
+                position:relative;
+                top:15px;
+                left:15px;
+              }
+            </pre>
+          The example above takes the box element and moves it down and to the left of the <em>where it would have been</em>, but leaves it in the normal flow.
+        </p>
+
+      <h4>Absolute Positioning</h4>
+          <p>
+          Absolute positioning is a little tricky. When an element is given <b>position:absolute</b> it is placed in relation to the first parent element with a set position.  If all the elements are normally/static positioned, it is taken out of the normal flow of the page and acts like the other elements aren't there. If you tell an element to go somewhere with absolute positioning, there it will stay.
+        </p>
+        <p>
+          If you have already set an elements position, the next element will be placed <em>relative to the first element.</em>  If you haven't defined any positions and use <b>position:absolute</b>, the element will be placed in relative to the document body.
+        </p>
+        <p>
+          Just like in relative positioning, you use the offset properites to move an element around.
+            <pre>
+            box
+              position:absolute;
+              top:15px;
+              left:15px;
+            }
+            </pre>
+          This bit of code looks very similar to the block we used above, however it would result in a very different layout.
+          Since the position is set as absolute, the top and bottom values that we set would take the box element and place it exactly 15px from the top and 15px from the left. There it will stay, regardless of what elements are in its path. You can also set a width property to avoid any overlapping elements.
+        </p>
+      <h4>Fixed Positioning</h4>
+        <p>
+          Fixed positioning is like gluing an element in place. It's a type of absolute positioning and shares all the same rules, except the element is positioned in relation to the browser window as opposed to other elements or the HTML. When a user scrolls down the page the element will be in the exact same place- it won't scroll with you.
+          This is useful when you want to have an ever-present navigation bar on your page.
+        </p>
+    </section>
+    <section>
+      <h3>Go and Build!</h3>
+        <p>
+          Now that you know more about the position property, you can accomplish building a variety of layouts, limited only by your imagination!
+          I hope with your new knowledge of this powerful property your days of plugging in code and hoping for the best are over... or at least less frequent.  Let's be honest here- this stuff is tricky!
+
+    </section>
+
+    <footer>
+      <ul>
+        <li>
+            <a href="https://github.com/allisonpaul"><img src="../img/github.png"  alt="github" width="50" height= "50"></a>
+        </li>
+        <li>
+            <a href="https://www.linkedin.com/in/allisonpaul"><img src="../img/linkedin.png" alt="linkedin" width="50" height= "50"></a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
+
+
+
