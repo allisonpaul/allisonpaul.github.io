@@ -53,12 +53,13 @@ nav  {
 a:visited {
   text-decoration: none;
   color:gray;
-
   }
+
  a {
   text-decoration: none;
   font-family: 'PT Mono', monospace;
-  font-weight:bold;}
+  font-weight:bold;
+ color:gray;}
 
 /*COLUMN ONE*/
 
