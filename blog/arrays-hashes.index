@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+    <head>
+        <!-- FONTS -->
+    <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Londrina+Sketch' rel='stylesheet' type='text/css'>
+     <link href='https://fonts.googleapis.com/css?family=PT+Mono' rel='stylesheet' type='text/css'>
+
+    <title>Allison Paul </title>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog-template.css">
+  </head>
+
+  <body>
+      <header>
+          <h1>A <span>Girl Code</span>s</h1>
+          <nav>
+            <ul>
+              <li>
+                <a href="..index.html">H O M E</a>
+              </li>
+              <li>
+                <a href="blog-index.html">B A C K</a>
+              </li>
+            </ul>
+          </nav>
+    </header>
+
+    <section class="posts">
+      <h1>Arrays and Hashes</h1>
+          <h2>What are they and when do I use them?</h2>
+          <h6>March 5, 2016</h6>
+    </section>
+
+    <section id="post">
+      <section>
+      <h3>Arrays</h3>
+        <p>
+          An array is a data type object that contains ordered lists of other objects. These objects can be variables, strings, integers, expressions, or even other arrays.
+          <h4>Creating Arrays</h4>
+            <p>
+              You can create an array using <code>array.new</code> or with literal notation  like <code>my_array=[]</code>.
+              Remember, arrays in Ruby allow you to store any type of objects, so your array can contain any combination of objects.
+          <h4>Accessing Data in Arrays</h4>
+            <p>
+              The data that you  set to the array goes inside of the square brackets. It's really easy to look up values within an array by using their index value. In Ruby, array indexes start from zero.
+            </p>
+          <pre><code>
+            my_array=[1,2,3,4,5]
+            my_array[0]
+          </code></pre>
+          <p>
+            The last line of the about code is pointing to the number 1, since it is the first value of the array.
+            You can also perform a reverse index lookup and start from the back of the array! In this case, the last item of the array will start with index value -1 and they will become smaller as you move to the left.
+          </p>
+      </section>
+      <section>
+      <h3>Hashes</h3>
+        <p>Hashes are a collection of key value pairs.  Similar to arrays, they have values assoiciated with indexes but here they are called keys. Every key is supplied with a value.
+        Like in arrays, keys can be any object, the only stipulation is they most be unique to the hash.
+          <h4>Creating a Hash</h4>
+            <p>
+              You create a hash the same way as an array; either with liternation notation such as <code>empty_hash={key => value}</code> or with the constructor method <code> empty_
+              hash=Hash.new</code>. Note that in a hash you use curly braces instead of square brackets.
+            </p>
+          <h4>Keys and Values</h4>
+            <p>
+              To access the information in a hash, you call out the key in square brackets and will receive the value.
+            </p>
+              <pre><code>
+                state_capitals= {
+                    "Kentucky"=> "Frankfort",
+                    "Ohio" => "Columbus",
+                    "Texas" =>Austin"
+                  }
+              </code></pre>
+            <p>
+              In the above example we have a hash of state capitols in which the states are the keys, and the capitals are the values. To retrieve the capital of Kentucky you type <code> state_capitals["Kentucky"]</code>
+            </p>
+      </section>
+      <section>
+        <h3>Arrays vs Hashes</h3>
+          <p>
+            So, when do you use an array and when do you use a hash? Good question. We now know that both are collections used to store and retrieve data.
+            An array is more like a list of the data that is in a certain order. In a hash the important thing isn't the order of the information but what the information is paired to. I saw an example comparing hashes and arrays to shopping lists, which I think is really helpful so I will do the same.  An array is like the list itself. You have your list and you ask yourself, "Okay, whats the first thing on my list? Milk. Whats the second thing? Pasta."
+            Great, so if your list was an array, <code>list[0]</code> would give you milk and <code>list[1]</code> would give you pasta.
+          <p>
+            Your hash would be more like the specific information for what is on your list.  So you need milk, what kind of milk do you need? I'm a skim person myself.  There's a whole lot of pasta, so what are you looking for exactly? Let's go with penne.<code>list["milk"]</code> would return <code>"skim"</code> and <code>list["pasta"]</code> gives you <code>"penne"</code>. Starting to make a little more sense now? Food always helps, huh?
+          </p>
+
+
+
+
+    <footer>
+      <ul>
+        <li>
+            <a href="https://github.com/allisonpaul"><img src="../img/github.png"  alt="github" width="50" height= "50"></a>
+        </li>
+        <li>
+            <a href="https://www.linkedin.com/in/allisonpaul"><img src="../img/linkedin.png" alt="linkedin" width="50" height= "50"></a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
+
+
+

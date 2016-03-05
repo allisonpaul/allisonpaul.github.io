@@ -32,10 +32,12 @@ header {
 /*LINKS*/
 header a {
   color:white;
-  text-decoration: none;}
+  text-decoration: none;
+}
 header a:visited {
   color:white;
-  text-decoration: none;}
+  text-decoration: none;
+}
 
 a:hover {
     color:orange;
@@ -59,7 +61,8 @@ a:visited {
   text-decoration: none;
   font-family: 'PT Mono', monospace;
   font-weight:bold;
- color:gray;}
+ color:gray;
+}
 
 /*COLUMN ONE*/
 
@@ -89,6 +92,7 @@ a:visited {
   width:45%;
  margin: 0 auto;
 }
+
 #column2of2 ul {
   list-style: none;
   text-align:center;
@@ -98,7 +102,8 @@ a:visited {
     margin-top:10%;
     text-align:center;
     font-family:'PT Mono', monospace;
-    color:black;}
+    color:black;
+  }
 
 #column2of2 span {
     font-size:12px;
