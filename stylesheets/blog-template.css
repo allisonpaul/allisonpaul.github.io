@@ -98,6 +98,21 @@ blockquote{
   color:gray;
 }
 
+/*CODE FORMATTING*/
+pre, code {
+  color:gray;
+  direction: ltr;
+  text-align:left;
+  font-size: 1em;
+}
+
+pre {
+  margin:10px;
+  padding:10px;
+  font-size:.75em;
+  background-color:#d1e0e0;
+}
+
 /*FOOTER*/
 footer li {
   display:inline;
