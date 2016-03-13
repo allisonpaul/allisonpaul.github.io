@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+    <head>
+        <!-- FONTS -->
+    <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Londrina+Sketch' rel='stylesheet' type='text/css'>
+     <link href='https://fonts.googleapis.com/css?family=PT+Mono' rel='stylesheet' type='text/css'>
+
+    <title>Allison Paul </title>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog-template.css">
+  </head>
+
+  <body>
+      <header>
+          <h1>A <span>Girl Code</span>s</h1>
+          <nav>
+            <ul>
+              <li>
+                <a href="../index.html">H O M E</a>
+              </li>
+              <li>
+                <a href="blog-index.html">B A C K</a>
+              </li>
+            </ul>
+          </nav>
+    </header>
+
+    <section class="posts">
+      <h1>Enumberables</h1>
+         <h2>The map method. </h2>
+          <h6>March 12, 2016</h6>
+    </section>
+
+    <section id="post">
+     <section>
+        <h3>What is an Enumeral?</h3>
+          <p>
+            Well, good question.  An enumeral is a mixin, or a module that consists of a bunch of methods packaged together.  Enumeral provides methods for collections of items (think arrays, hashes, and the like) so you can iterate through them.
+            This module contains many useful methods like <code> #map</code>, <code> #group_by</code>, <code> #select </code>, and <code> #cycle </code>. I suggest checking out the <a href="http://ruby-doc.org/core-2.3.0/Enumerable.html#method-i-map">Ruby Docs</a> for a full list. In this post we are going to talk about the map method.
+          </p>
+        <h3>Lets Map.</h3>
+          <p>
+            Say you want to keep all the items in your object and modify them somehow? <code> #map </code> will run your code block and give you an object filled with whatever your block returned. This method is also referred to by<code>#collect</code>.  Map is useful when you want to change every value in an enumerable.
+          </p>
+          <h2>With #each </h2>
+            <pre><code>
+              multiply = []
+              [2,4,6,8].each do |n|
+                multiply << n * 5
+              end
+            </code></pre>
+
+          <h2>With #map</h2>
+            <pre><code>
+              [2,4,6,8].map do |n|
+                n*5
+              end
+            </code></pre>
+          <p>
+            Map returns a new array with the results of the code block, so it's not neccesary to shovel into a new array like you do with <code>#each</code>. If you would rather alter the original array, you can turn <code>#map</code> into a destructive method by adding a bang operator (!) like so <code>map!</code>.
+          </p>
+
+
+
+    </section>
+
+    <footer>
+      <ul>
+        <li>
+            <a href="https://github.com/allisonpaul"><img src="../img/github.png"  alt="github" width="50" height= "50"></a>
+        </li>
+        <li>
+            <a href="https://www.linkedin.com/in/allisonpaul"><img src="../img/linkedin.png" alt="linkedin" width="50" height= "50"></a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
+
+
+
