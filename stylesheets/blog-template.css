@@ -1,9 +1,9 @@
 /*HEADING*/
 header h1 {
   text-align:center;
-  font-family: 'Londrina Sketch', cursive;
+  font-family: 'Work Sans', sans-serif;
   padding-top:5%;
-  padding-bottom:3%%;
+  padding-bottom:3%;
   top:0;
   color:white;
   font-size:35px;
@@ -13,8 +13,9 @@ h1 span {
   font-weight:bold;
   color: white;
   font-size:75px;
-  font-family: 'Londrina Sketch', cursive;
+   font-family: 'Work Sans', sans-serif;
   }
+
 
 header {
   background-image:url(../img/logo.jpg);
