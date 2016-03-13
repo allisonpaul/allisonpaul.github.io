@@ -7,7 +7,7 @@ img {
 /*HEADER*/
 header h1 {
   text-align:center;
-  font-family: 'Londrina Sketch', cursive;
+  font-family: 'Work Sans', sans-serif;
   padding-top:5%;
   padding-bottom:3%;
   top:0;
@@ -19,7 +19,7 @@ h1 span {
   font-weight:bold;
   color: white;
   font-size:75px;
-  font-family: 'Londrina Sketch', cursive;
+   font-family: 'Work Sans', sans-serif;
   }
 
 header {
@@ -30,6 +30,7 @@ header {
   }
 
 /*LINKS*/
+
 header a {
   color:white;
   text-decoration: none;
@@ -39,9 +40,6 @@ header a:visited {
   text-decoration: none;
 }
 
-a:hover {
-    color:orange;
-}
 
 /*NAV*/
 nav  {
@@ -54,14 +52,18 @@ nav  {
 /*GENERAL*/
 a:visited {
   text-decoration: none;
-  color:gray;
+  color:#BDD9D9;
   }
 
  a {
   text-decoration: none;
   font-family: 'PT Mono', monospace;
   font-weight:bold;
- color:gray;
+ color:#gray;
+}
+
+a:hover {
+    color:orange;
 }
 
 /*COLUMN ONE*/

@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+
 /*NAV */
 nav a {
   margin:50px;
@@ -50,6 +51,8 @@ li {
   margin: 5%;
   max-width:100%;
   padding-top:8%;
+  width:160px;
+  height:255px;
   }
 
 /*SECTIONS*/
