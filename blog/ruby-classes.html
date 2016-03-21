@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+    <head>
+        <!-- FONTS -->
+    <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Londrina+Sketch' rel='stylesheet' type='text/css'>
+     <link href='https://fonts.googleapis.com/css?family=PT+Mono' rel='stylesheet' type='text/css'>
+
+    <title>Allison Paul </title>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog-template.css">
+  </head>
+
+  <body>
+      <header>
+          <h1>A <span>Girl Code</span>s</h1>
+          <nav>
+            <ul>
+              <li>
+                <a href="../index.html">H O M E</a>
+              </li>
+              <li>
+                <a href="blog-index.html">B A C K</a>
+              </li>
+            </ul>
+          </nav>
+    </header>
+
+    <section class="posts">
+      <h1>Ruby Classes</h1>
+         <h2>and Instance Variables </h2>
+          <h6>March 20, 2016</h6>
+    </section>
+
+    <section id="post">
+     <section>
+      <p>
+        This week at Dev Bootcamp we focused a lot on classes. Classes are an awesome way to organize data. You assign the data different attributes and pass the information within methods.  It's easier here if I let the code do the talking.
+      </p>
+      <pre><code>
+        class Movie
+          def initialize(actor, director, title)
+            @actor = actor
+            @director = director
+            @title = title
+          end
+
+          def movie_title
+            puts "#{@title} was a really great movie!"
+          end
+
+          def the_talent
+            puts "It starred #{@actor}"
+          end
+
+          def directed
+            puts "And it was directed by #{@director}.  #{@actor} has been in some other films by #{@director} in the past as well."
+          end
+        end
+
+
+      movie= Movie.new("Owen Wilson", "Wes Anderson", "The Royal Tenenbaums")
+      movie.movie_title
+      movie.the_talent
+      movie.directed
+
+      </code></pre>
+
+      <p>
+        Above you see a gorgeous and complicated example of me creating, defining and calling a class. (Okay, it's basic). First I defined a classs titled Movie, with a capital 'M'. It is important to use a capital letter to define class.  A class must do something meaningful. You add methods to interact with the data and give results. Methods are just things that an object can do.
+      </p>
+      <p>
+        The next step is to initialize the method which will pass down all parameters to use in any other method of the class. Pretty nifty, huh? These are our instance variables. Instance variables are defined with an <code>@</code> symbol. Instance variables represent an object's data and object ID. If the variable doesn't begin with an <code>@</code> it is just a plain old local variable that can't be used between methods.
+      </p>
+      <p>
+        The last step is to call the method.  <code>movie= Movie.new("Owen Wilson", "Wes Anderson", "The Royal Tenenbaums")</code> is creating a new instance of the class Movie. To call each individual method of the class we just type <code>move.'method_name'</code> and fill in the correct name of the method.
+    </section>
+
+    <footer>
+      <ul>
+        <li>
+            <a href="https://github.com/allisonpaul"><img src="../img/github.png"  alt="github" width="50" height= "50"></a>
+        </li>
+        <li>
+            <a href="https://www.linkedin.com/in/allisonpaul"><img src="../img/linkedin.png" alt="linkedin" width="50" height= "50"></a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
+
+
+
