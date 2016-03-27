@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+    <head>
+        <!-- FONTS -->
+    <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Londrina+Sketch' rel='stylesheet' type='text/css'>
+     <link href='https://fonts.googleapis.com/css?family=PT+Mono' rel='stylesheet' type='text/css'>
+
+    <title>Allison Paul </title>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog-template.css">
+  </head>
+
+  <body>
+      <header>
+          <h1>A <span>Girl Code</span>s</h1>
+          <nav>
+            <ul>
+              <li>
+                <a href="../index.html">H O M E</a>
+              </li>
+              <li>
+                <a href="blog-index.html">B A C K</a>
+              </li>
+            </ul>
+          </nav>
+    </header>
+
+    <section class="posts">
+      <h1>JavaScript and Ruby</h1>
+         <h2>Similarities and Differences.</h2>
+          <h6>March 26, 2016</h6>
+    </section>
+
+    <section id="post">
+     <section>
+      <p>
+        Over the past few weeks I've gotten to know Ruby on a pretty good level. I wouldn't call us best friends, but I would say we are pretty friendly and spent quite a bit of time together. It is still a bit of an adjustment switching to JavaScript, but overall they really are not all that different.  There are some changes in syntax and logic, but you can get the same tasks accomplished with similar steps in many cases.
+      </p>
+      <h3>Declaring Variables</h3>
+        <p>
+          In Ruby it is very easy to declare a variable. You just type the variable name equal to the variable value.
+          <pre><code>name = value </code></pre>
+          In Javascript it is still easy, just a little longer.
+          <pre><code>var name = value </code></pre>
+        </p>
+
+      <h3>Ruby Hashes v. Javascript Objects</h3>
+        <p>
+            While getting to know Ruby, I learned a bit about hashes. Hashes are key value pairs that store information in no particular order.
+            <pre><code>
+              hash= {hash_key: hash_value, hash_key2: hash_value2}
+            </code></pre>
+            In JavaScript, hashes are referred to as objects and written slightly differently.
+            <pre><code>
+              var hash= {hash_key: hash_value, hash_key2: hash_value2,}
+            </code></pre>
+            You can call upon the value using either bracket or dot notation.
+            <pre><code>
+              hash[hash_key]
+              hash.hash_key
+            </code></pre>
+          </p>
+        <h3>Semicolons</h3>
+          <p>Ah, such a simple symbol but such a tough thing to bang into my head. In Ruby semicolons are not used for statements, yet in JavaScript they are used after every statement but not after curly brackets.
+          <pre><code>
+            var x=0; x++  //semicolon obligatory
+            var x=0       //semicolon optional
+                x++       //semicolon optional
+          </code></pre>
+          The semicolon is only obligatory when you have two or more statements on the same line, and is optional to seperate statements on seperate lines. You SHOULD NOT put a semicolon after closing a curly brace. The only exception are when declaring a variable or function with empty values.
+          <pre><code>
+            var object= {};
+          </code></pre>
+          I highly suggesting out <a href="https://www.codecademy.com/blog/78">this</a> page for a more complete guide to semicolons.
+        </p>
+
+      <h3>Loops</h3>
+        <p>
+          Looping in JavaScript is much more limited than in Ruby. While there are numerous options with Ruby, there are only for loops and while loops in JavaScript.
+        </p>
+        <p>
+          While loops are the more basic way to iterate through a set of data.They start with a condition and then execute a block of code while that condition is true. When the condition is no longer true, the code stops and the loop ends.
+          Here is a while loop in Ruby.
+          <pre><code>
+            while (x < 5)
+              puts x
+              x +=1
+            end
+          </code></pre>
+          Here is the same while loop in JavaScript.
+          <pre><code>
+            while (x<5){
+            console.log(x);
+            x++;
+            }
+           </code></pre>
+           So while the syntax is different, the logic is the same.
+         </p>
+         <p>
+          For loops are formatted by setting a statement to be executed before beginning the loop, defining the condition for running the loop, and executing the code each time the loop runs. Here is a for loop in Ruby.
+          <pre><code>
+          for n in 1..10
+            if n <= 5
+              puts n
+            end
+          end
+          </code></pre>
+          The same for loop in Javascript
+          <pre><code>
+          for (var x=1; x<=5; x++){
+            console.log(x);
+          }
+          </code></pre>
+          Both blocks of code are taking variable x and mulptiply it by five until it reaches 5.
+        </p>
+       <h3>The Same Yet Different</h3>
+        <p>
+          In these small examples you can see that you can accomplish the same tasks but with very different languages. Ruby and Javascript are both object-oriented languages. They have similar value types (numbers, strings, booleans, functions).  They store data in variables. They evaluate functions (okay, methods in Ruby), and they have similar loops, conditionals, and operators.
+    </section>
+
+    <footer>
+      <ul>
+        <li>
+            <a href="https://github.com/allisonpaul"><img src="../img/github.png"  alt="github" width="50" height= "50"></a>
+        </li>
+        <li>
+            <a href="https://www.linkedin.com/in/allisonpaul"><img src="../img/linkedin.png" alt="linkedin" width="50" height= "50"></a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
+
+
+
