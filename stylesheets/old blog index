@@ -7,27 +7,37 @@ img {
 /*HEADER*/
 header h1 {
   text-align:center;
-  font-family: 'Lato', sans-serif;
-  color:#87AB37;
+  font-family: 'Work Sans', sans-serif;
+  padding-top:5%;
+  padding-bottom:3%;
+  top:0;
+  color:white;
   font-size:35px;
-  }
-
-h1 span {
-font-size:75px;
 }
 
+h1 span {
+  font-weight:bold;
+  color: white;
+  font-size:75px;
+   font-family: 'Work Sans', sans-serif;
+  }
+
+header {
+  background-image:url(../img/logo.jpg);
+  height:20%;
+  width:100%:;
+  font-weight:bold;
+  }
 
 /*LINKS*/
 
 header a {
-  color:gray;
+  color:white;
   text-decoration: none;
-  text-align:center;
 }
 header a:visited {
-  color:gray;
+  color:white;
   text-decoration: none;
-   text-align:center;
 }
 
 
@@ -49,25 +59,47 @@ a:visited {
   text-decoration: none;
   font-family: 'PT Mono', monospace;
   font-weight:bold;
-  color:gray;
-  }
+ color:#gray;
+}
 
 a:hover {
-  color:orange;
+    color:orange;
+}
+
+/*COLUMN ONE*/
+
+#column1of2 {
+  float:left;
+  width:25%;
+  text-align:left;
+  position:absolute;
+  left-0;
+  border-right:1px solid gray;
+  }
+
+#column1of2 p {
+  font-size:12px;
+  font-family:lucida;
+  padding:5%;
   }
 
 
 
+#logo{
+  margin-top:18%;}
+
 /*COLUMN TWO*/
+
+
 #column2of2 {
 
   width:45%;
  margin: 0 auto;
 }
 
-#column2of2 ol {
+#column2of2 ul {
   list-style: none;
-
+  text-align:center;
 }
 
 #column2of2 h2 {
@@ -79,18 +111,6 @@ a:hover {
 #column2of2 span {
     font-size:12px;
   }
-
-/*FOOTER*/
-footer li {
-  display:inline;
-  list-style: none
-  }
-
-footer{
-  text-align: center;
-  clear:both;
-  padding-top: 50px;
-
 
 
 
