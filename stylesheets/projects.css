@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+
+/*NAV */
+nav a {
+  margin:50px;
+  font-family: 'Work sans', sans-serif;
+  text-align:center;
+  font-weight: bold;
+}
+
+.fixed-nav-bar {
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  /*z index sets the nav bar so it is infront of everything else*/
+  z-index: 9999;
+  width: 100%;
+  height: 50px;
+}
+
+/*GENERAL BODY*/
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+
+#projects {
+  font-family: 'Source Code Pro', ;
+  font-weight:100;
+  margin-bottom:5%;
+  font-size:3.5em;
+  text-align: center;
+}
+
+li {
+  display:inline;
+}
+
+/*IMAGE AND ABOUT*/
+
+
+/*SECTIONS*/
+
+#gallery {
+  text-align: center;
+
+}
+#gallery img{
+  padding:15%;
+}
+#contact {
+text-align:center;
+}
+
+#contact a{
+  display:inline;
+  padding-top:70px;
+}
+
+footer  p {
+  font-size: 8px;
+  font-family:times;
+  font-color:#3B4247;
+  text-align:center;
+}
+
+
+/*LINKS*/
+a:visited {
+  text-decoration:none;
+  color:#7B89A9;
+}
+
+a {
+  text-decoration:none;
+  color:#7B89A9;
+}
+
+a:hover {
+  color:#87AB37;
+}
+
+a[href^="mailto"] {
+  color:#7B89A9;
+  text-decoration: none;
+}
