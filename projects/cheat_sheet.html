@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,200' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="cheater.css">
+  <title> Allison Paul | Cheat Sheet </title>
+</head>
+<body>
+  <header>
+    <h1>JavaScript vs. Ruby</h1>
+      <h2>The Basics</h2>
+  </header>
+  <nav>
+  </nav>
+
+<section id= 'javascript'>
+  <h3>JAVASCRIPT</h3>
+    <p>
+      Defining a variable:
+      <pre><code>
+      var myVariable=2;
+      </code></pre>
+    </p>
+    <p>
+      Converting a string to a number:
+      <pre><code>
+      Number("2");
+      </code></pre>
+    </p>
+    <p>
+      While loops:
+      <pre><code>
+      var n=1
+      while (n<5){
+        console.log(n);
+        n++;
+        }
+      </code></pre>
+      <span>
+        Take note of the semicolons, parenthesis and brackets.
+        Also notice you increment the counter with ++ instead of +=.
+      </span>
+    </p>
+    <p>
+      For loops:
+      <pre><code>
+      for (var i=0; i<=5; i++){
+        console.log(i);
+        }
+      </code></pre>
+    </p>
+    <p>
+      Defining a class:
+      <pre><code>
+      function Person (){}
+    </code></pre>
+  </p>
+  <p>
+      New instances of objects:
+      <pre><code>
+      var person1= new
+      Person();
+      var person2= new
+      Person();
+    </code></pre>
+  </p>
+  <p>
+    The constructor method:<br>
+    <span>
+      This is called at the moment of instantiation and there is no need to explicitly define it.
+    </span>
+    <pre><code>
+    function Person(){
+    alert('Someone new.');
+    }
+    var person1= new
+    Person();
+    var person2= new
+    Person();
+    </code></pre>
+  </p>
+  <p>
+    Properties:<br>
+    <span>
+      These are variables available to instances of the class (function.) 'This' refers to the current object, which is similar to the concept of 'self' in Ruby.
+    </span>
+    <pre><code>
+    function Person(name){
+      this.name=name;
+      alert('Someone new.');
+      }
+
+      var person1= new
+      Person('Tom');
+      var person2= new
+      Person('Betty');
+    </code></pre>
+  </p>
+  <p>
+    Methods:<br>
+    <span>
+      Methods follow the same logic as properties except they are functions. To define a method, assign a function to a named property of the class's prototype property.
+    </span>
+    <pre><code>
+      function Person(name){
+      this.name=name;
+      alert('Someone new.');
+      }
+
+      Person.prototype.sayHello
+      =function (){
+        alert('hello');
+      };
+
+      var person1= new
+      Person('Tom');
+      var person2= new
+      Person('Betty');
+
+      person1.sayHello();
+      //-> hello
+    </code></pre>
+    </p>
+  </section>
+
+  <section id='ruby'>
+    <h3>RUBY</h3>
+     <p>
+      Defining a variable:
+      <pre><code>
+      myVariable=2;
+      </code></pre>
+    </p>
+    <p>
+      Converting a string to a number:
+      <pre><code>
+      "2".to_i
+    </code></pre>
+  </p>
+  <p>
+    While loops:
+    <pre><code>
+    n=1
+    while n <= 5
+      puts n
+      n+=1
+    end
+    </code></pre>
+  </p>
+  <p><br><br><br>
+    For loops:
+    <pre><code>
+    for n in 1..5
+      puts n
+      n+=1
+    end
+  </code></pre>
+  </p>
+  <p>
+    Defining a class:
+    <pre><code>
+    class Person
+    end
+    </code></pre>
+  </p>
+  <p>
+    New instances of objects:
+    <pre><code>
+    @person1=Person.new
+    @person2=Person.new
+    </code></pre>
+  </p>
+  <p>
+  The initialize method:<br>
+  <span>It's called automatically at the moment of instantiation</span>
+  <pre><code>
+    class Person
+      def initialize
+        puts "Someone new."
+      end
+    end
+
+    @person1=Person.new
+    @person2=Person.new
+    </code></pre>
+  <p>
+    Instance Variables: <br>
+    <span>These are variables to instances of the class. Defined with an @. </span>
+    <pre><code>
+    class Person
+      def initialize(name)
+        @name=name
+        puts "Someone new."
+      end
+    end
+
+    @person1=Person.new('Tom')
+    @person2=Person.new('Betty')
+  </code></pre>
+</p>
+<p>
+  Methods:<br>
+  <span> Methods are called the same way that instance variables are called on an object.  However, they are defined within the class.
+  <pre><code>
+  class Person
+    def initialize(name)
+      @name=name
+      puts "Someone new."
+    end
+
+    def say_hello
+      puts "hello"
+    end
+  end
+
+    @person1=Person.new('Tom')
+    @person2=Person.new('Betty')
+
+    @person1.say_hello
+      //-> hello
+  </code></pre>
+</p>
+    </section>
+
+
+
+
+
+  <footer>
+  </footer>
+</body>
+</html>
