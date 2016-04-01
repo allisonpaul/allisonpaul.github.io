@@ -1,0 +1,56 @@
+/*FORMATTING AND FONTS*/
+header {
+  text-align:center;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight:400;
+}
+
+h3 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size:1.5em;
+  text-align: center;
+  text-decoration: underline;
+}
+
+p{
+  font-family:'Helvetica';
+  font-size:18px;
+}
+
+span {
+  font-family:'Helvetica';
+  color:gray;
+  font-size:14px;
+}
+
+/*COLUMNS*/
+#ruby {
+  width:30%;
+  float:right;
+  margin:2% 5%;
+  margin-right:15%;
+}
+
+#javascript{
+  width:30%;
+  margin:2% 5%;
+  float:left;
+  margin-left:15%;
+}
+
+/*CODE BLOCKS*/
+pre{
+  background-color:#f5f5f5;
+  margin:5%;
+  border-radius: 5%;
+  padding-top:5%;
+  padding-bottom:5%;
+}
+
+code {
+  color:orange;
+}
+
+
+
+
