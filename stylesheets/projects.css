@@ -1,9 +1,8 @@
 @charset "UTF-8";
 
-
 /*NAV */
 nav a {
-  margin:50px;
+  padding:50px;
   font-family: 'Work sans', sans-serif;
   text-align:center;
   font-weight: bold;
@@ -26,7 +25,7 @@ body {
   font-weight: 400;
 }
 
-#projects {
+#projects  {
   font-family: 'Source Code Pro', ;
   font-weight:100;
   margin-bottom:5%;
@@ -45,11 +44,13 @@ li {
 
 #gallery {
   text-align: center;
-
 }
+
 #gallery img{
   padding:15%;
+
 }
+
 #contact {
 text-align:center;
 }
@@ -63,7 +64,7 @@ footer  p {
   font-size: 8px;
   font-family:times;
   font-color:#3B4247;
-  text-align:center;
+
 }
 
 
@@ -86,3 +87,4 @@ a[href^="mailto"] {
   color:#7B89A9;
   text-decoration: none;
 }
+
