@@ -98,3 +98,7 @@ a[href^="mailto"] {
   text-decoration: none;
 }
 
+#aboutme {
+  margin-right: 25%;
+  font-size:12px;
+}

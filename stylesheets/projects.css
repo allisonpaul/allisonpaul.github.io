@@ -67,7 +67,6 @@ footer  p {
 
 }
 
-
 /*LINKS*/
 a:visited {
   text-decoration:none;
@@ -88,3 +87,7 @@ a[href^="mailto"] {
   text-decoration: none;
 }
 
+#aboutme {
+  margin-right: 20%;
+  font-size:12px;
+}
