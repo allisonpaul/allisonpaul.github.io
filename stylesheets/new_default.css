@@ -24,7 +24,7 @@ nav a {
 
 h1{
   font-family: 'Muli', sans-serif;
-  margin-bottom:35px;
+  margin-bottom:7%;
   font-size:3.5em;
 }
 
@@ -45,12 +45,13 @@ li {
   /*vh sets to the max width of the view port*/
 
 #header img {
-  padding:10%;
+  padding-bottom:2%;
+  padding-right:10%;
+  padding-top:10%;
 }
 
 /*SECTIONS*/
 #contact {
-  width: 100%;
   text-align:center;
 }
 
@@ -99,8 +100,8 @@ a[href^="mailto"] {
 }
 
 #aboutme {
-  margin-right: 25%;
   font-size:12px;
+  width: 75%;
 }
 
 .nav-img{
@@ -108,5 +109,10 @@ a[href^="mailto"] {
 }
 
 #about{
-  width: 70%;
+  width: 65%;
+}
+
+body{
+  width: 75%;
+  margin: 0 auto;
 }
