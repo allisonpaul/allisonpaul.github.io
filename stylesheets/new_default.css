@@ -2,14 +2,14 @@
 
 /*NAV */
 nav a {
-  margin:50px;
+  margin:1%;
   font-family: 'Work Sans', sans-serif;
-  text-align:center;
+  text-align:right;
   font-weight: bold;
 }
 
 .fixed-nav-bar {
-  text-align: center;
+  text-align: left;
   position: fixed;
   top: 0;
   left: 0;
@@ -101,4 +101,12 @@ a[href^="mailto"] {
 #aboutme {
   margin-right: 25%;
   font-size:12px;
+}
+
+.nav-img{
+  float:left;
+}
+
+#about{
+  width: 70%;
 }
